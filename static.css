@@ -27,10 +27,9 @@
 		
 		/* Style the iframe */
 		iframe {
-			width: 100%;
+			width: 500px;
 			height: 0;
 			padding: 0;
 			border: none;
-			aspect-ratio: 1 / 1;
 		}
 
