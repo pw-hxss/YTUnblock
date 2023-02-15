@@ -31,3 +31,9 @@
 			height: 500px;
 			border: none;
 		}
+    		body {
+			background: linear-gradient(to bottom right, #00FFFF, #FFFF00);
+			margin: 0;
+			padding: 0;
+			height: 1000px;
+		}
