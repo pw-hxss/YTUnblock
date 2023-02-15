@@ -7,6 +7,6 @@ Simple function to open up iframe that contain the /no-cookie/embaded element to
 |The information on this website is for general informational purposes only.                                            |
 |This site makes no representation or warranty, express or implied.                                                     |
 |Your use of the site is solely at your own risk.                                                                       |
-|This sitee may contain links to third party content, which we do not warrant, endorse, or assume liability for.        |
+|This site may contain links to third party content, which we do not warrant, endorse, or assume liability for.        |
 -------------------------------------------------------------------------------------------------------------------------
 Thanks for support
