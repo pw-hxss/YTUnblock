@@ -9,8 +9,25 @@
 			border: none;
 		}
 	</style>
+    
 </head>
 <body>
+<style>
+	.ip {
+		color: green;
+	}
+	</style>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	$.getJSON("https://api.ipify.org?format=json", function(data) {
+		
+		$("#gfg").html(data.ip);
+	})
+	</script>
+<h7>Ip Address : </h7><h7 id="gfg" class="ip"></h7><br>
+<h7>Status (As of 17/2/23) : </h7><h7 class="ip">SAFE</h7><br>
 	<label for="link">Enter Link:</label>
 	<input type="text" id="link" placeholder="Enter link here">
 	<button onclick="openIframe()">Unblock Video</button>
@@ -36,6 +53,7 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
 }
 </style>
+
 	<br><br>
 	<div id="iframe-container"></div>
 
