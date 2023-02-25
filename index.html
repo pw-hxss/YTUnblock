@@ -94,7 +94,8 @@
 
 	<label for="link">Enter Link:</label>
 	<input type="text" id="link" placeholder="Enter link here">
-	<button onclick="openIframe()">ᏬᏁᏰᏝᎧፈᏦ ᎩᎧᏬᏖᏬᏰᏋ</button>
+	<button onclick="openIframe()">UNBLOCK VIDEO</button>
+    <button onclick="flush()">CLEAR LOGS</button>
 	<br>
 
 <style>
@@ -158,6 +159,11 @@ tbody td:first-child {
 			iframeContainer.innerHTML = '<iframe src="' + final + '"></iframe>';
 		}
 		
+        
+        function clear() {
+        location.replace("https://www.google.com");
+        alert('Logs Cleared');})();
+        }
 	</script>
 </body>
 </html>
