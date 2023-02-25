@@ -1,75 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ᎩᎧᏬᏖᏬᏰᏋ ᏰᎩᎮᏗᏕᏕ</title>
+<head>
+	<title>ᎩᎧᏬᏖᏬᏰᏋ ᏰᎩᎮᏗᏕᏕ</title>
+	<style>
+		iframe {
+			width: 100%;
+			height: 500px;
+			border: none;
+		}
+	</style>
     
-    <style>
-      iframe {
-        width: 100%;
-        height: 500px;
-        border: none;
-      }
-      
-      input[type=range] {
-        -webkit-appearance: none;
-        width: 10%;
-        height: 10px;
-        border-radius: 5px;
-        background: #ddd;
-        outline: none;
-      }
+</head>
+<body>
+<style>
+	.ip {
+		color: green;
+	}
+	</style>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	$.getJSON("https://api.ipify.org?format=json", function(data) {
+		
+		$("#gfg").html(data.ip);
+	})
+	</script>
 
-      input[type=range]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #007bff;
-        cursor: pointer;
-      }
 
-      table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-top: 20px;
-      }
 
-      thead th {
-        background-color: #ddd;
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-      }
 
-      tbody td {
-        border: 1px solid #ccc;
-        padding: 8px;
-      }
 
-      tbody td:first-child {
-        font-weight: bold;
-      }
 
-      .cc {
-        display: none;
-      }
-      
-    </style>
-  </head>
-  <body>
-    <style>
-      .ip {
-        color: green;
-      }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-      $.getJSON("https://api.ipify.org?format=json", function(data) {
-        $("#gfg").html(data.ip);
-      })
-    </script>
-    <p id="ip-address" class="cc"></p>
+
+
+<p id="ip-address" class="cc"></p>
+
     <table>
       <thead>
         <tr>
@@ -86,59 +52,118 @@
         </tr>
       </thead>
       <tbody id="ip-info"></tbody>
-
     </table>
-    <script>
-      fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
-        const ipAddress = data.ip;
-        const ipAddressElement = document.getElementById("ip-address");
-        ipAddressElement.innerHTML = ipAddress;
-        const ipInfoElement = document.getElementById("ip-info");
-        const ipInfo = `
-      
-			<tr>
-				<td>${data.ip}</td>
-				<td>${data.city}</td>
-				<td>${data.country_name}</td>
-				<td>${data.region}</td>
-				<td>${data.org}</td>
-				<td>${data.domain}</td>
-				<td>${data.hostname}</td>
-				<td>${data.org}</td>
-				<td>${data.proxy}</td>
-				<td>${data.type}</td>
-			</tr>
-    `;
-        ipInfoElement.innerHTML = ipInfo;
-      });
-    </script>
-    <br>
-    <a href="https://pw-hxss.github.io/YTUnblock/README.md" target="_blank">&#9888;DISCLAIMER&#9888;</a>
-    <br>
-    <br>
-    <label for="link">Enter Link:</label>
-    <input type="text" id="link" placeholder="Enter link here">
-    <button onclick="openIframe()">UNBLOCK VIDEO</button>
-    <button onclick="flush()">CLEAR LOGS</button>
-    <br>
-    <br>
-    <br>
-    <div id="iframe-container"></div>
-    <script>
-      function openIframe() {
-        var link = document.getElementById("link").value;
-        const n = 11;
-        var last = link.substring(link.length - n);
-        const terms = ["https://www.youtube-nocookie.com/embed/", last];
-        let final = terms.join("");
-        var iframeContainer = document.getElementById("iframe-container");
-        iframeContainer.innerHTML = ' < iframe src = "' + final + '" > </iframe>';
-      }
 
-      function flush() {
+    <script>fetch('https://ipapi.co/json/')
+  .then(response => response.json())
+  .then(data => {
+    const ipAddress = data.ip;
+    const ipAddressElement = document.getElementById("ip-address");
+    ipAddressElement.innerHTML = ipAddress;
+
+    const ipInfoElement = document.getElementById("ip-info");
+    const ipInfo = `
+      <tr>
+        <td>${data.ip}</td>
+        <td>${data.city}</td>
+        <td>${data.country_name}</td>
+        <td>${data.region}</td>
+        <td>${data.org}</td>
+        <td>${data.domain}</td>
+        <td>${data.hostname}</td>
+        <td>${data.org}</td>
+        <td>${data.proxy}</td>
+        <td>${data.type}</td>
+      </tr>
+    `;
+    ipInfoElement.innerHTML = ipInfo;
+  });
+</script>
+
+
+
+
+
+
+
+
+
+<br>
+<a href="https://pw-hxss.github.io/YTUnblock/README.md" target="_blank">&#9888;DISCLAIMER&#9888;</a><br>
+<h7>Status (As of 25/2/23) : </h7><h7 class="ip">SAFE</h7><br>
+
+	<label for="link">Enter Link:</label>
+	<input type="text" id="link" placeholder="Enter link here">
+	<button onclick="openIframe()">Unblock Video</button>
+        <button onclick="flush()">CLEAR LOGS</button>
+	<br>
+
+<style>
+input[type=range] {
+  -webkit-appearance: none;
+  width: 10%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+thead th {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+tbody td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tbody td:first-child {
+  font-weight: bold;
+}
+
+.cc {
+  display: none;
+}
+</style>
+
+	<br><br>
+	<div id="iframe-container"></div>
+
+	<script>
+		        		function openIframe() {
+			var link = document.getElementById("link").value;
+              const n = 11;
+              var last = link.substring(link.length - n);
+                const terms = ["https://www.youtube-nocookie.com/embed/", last];
+                 let final = terms.join("");
+			var iframeContainer = document.getElementById("iframe-container");
+			iframeContainer.innerHTML = '<iframe src="' + final + '"></iframe>';
+		}
+		
+                function flush() {
         location.replace("https://www.google.com");
-        alert('Logs Cleared');
-      }
-    </script>
-  </body>
+        alert('Logs Cleared');})();
+        }
+        
+	</script>
+</body>
 </html>
