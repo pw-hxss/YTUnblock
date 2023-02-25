@@ -1,6 +1,8 @@
 # YTUnblock
-Last Updated:15/02/23
+Last Updated:25/02/23
 Simple function to open up iframe that contain the /no-cookie/embaded element to block ads and play any videos from yt
+24/2/23 youtube bypass patched
+25/2/23 setting up new bypass script
 
 -------------------------------------------------------------------------------------------------------------------------
 |⚠️Disclaimer⚠️                                                                                                        |
