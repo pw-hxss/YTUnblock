@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog with Embedded Video</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <h1>Welcome to My Blog!</h1>
+
+  <p>Enter the video ID below and click "Watch Video" to see the embedded video:</p>
+
+  <input type="text" id="video-id-input">
+
+  <button id="watch-video-btn">Watch Video</button>
+
+  <div id="video-container"></div>
+
+  <script>
+    $(document).ready(function() {
+      $('#watch-video-btn').click(function(e) {
+        e.preventDefault();
+        var videoId = $('#video-id-input').val();
+        var embedCode = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $('#video-container').html(embedCode);
+      });
+    });
+  </script>
+
+</body>
+</html>
